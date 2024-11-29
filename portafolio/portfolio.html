@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--Cookies-->
+    <div class="cookie-consent">
+        <p>Este sitio utiliza cookies para mejorar tu experiencia. Aceptas el uso de cookies al continuar navegando.</p>
+        <button class="botonact" id="botonacp">Aceptar</button>
+    </div>
+
+    <!-- Sobre mi -->
+
+<div class="wrapper">
+    <header>
+        <nav class="navbar">
+            <div class="nombre">
+                <h2>Juan<span>López</span> Caballero </h2>
+            </div>
+        
+            <ul class="entradas">
+                <li><a href="#sobre">Sobre mi</a></li>
+                <li><a href="#galeriaid">Galeria de proyectos</a></li>
+                <li><a href="#habycono">Habilidades y conocimientos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="https://www.instagram.com"><img src="./imagenes/instanegro.PNG" class="instagram"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="info">
+            <h1 class="h1" id="Sobre"> Sobre mi</h1>    
+            <p class="sobremi">Soy Juan López Caballero, un joven de 18 años. Cursé la ESO en el IES Enric Valor. En un principio, tenía la intención de hacer el bachillerato, pero pronto me di cuenta de que no era algo que realmente me motivara. Por ello, decidí optar por la formación profesional en el centro Educación Profesional Sorolla, donde realicé un grado medio y adquirí habilidades útiles para mi desarrollo en el ámbito laboral.</p>
+        </div>
+        <img src="./imagenes/yo.png" alt="yo">
+    </main>
+</div>  
+<!-- Galeria de proyectos -->
+<div>
+    <h1 class="h1galeria" id="galeriaid"> Galeria de proyectos</h1>
+</div>
+<div class="navgaleria">
+    <ul class="proyectos">
+        <li><a href="proyecto1.html">Formatos de texto HTML</a></li>
+        <li><a href="proyecto2.html">Listas y enlaces HTML</a></li>
+        <li><a href="proyecto3.html">Imágenes y tablas HTML</a></li>
+        <li><a href="proyecto4.html">Textos y fondos</a></li>
+        <li><a href="proyecto5.html">Cajas y posicionamiento HTML</a></li>
+        <li><a href="proyecto6.html">Ingenieria de prompts</a></li>
+    </ul>
+</div>
+<!-- Habilidades y conocimientos -->
+<div class="habycono">
+    <div>
+        <h1 class="hctitulo" id="habycono">Habilidades y conocimientos</h1>
+        <h2 class="hctitulo2">Conocimientos</h2>
+    </div>
+    <div class="conocimientos">
+        <div>
+            <p>HTML</p>
+            <ul class="habHTMLul">
+                <div class="barrahtml">
+                    <div class="barrahtmlprog">50%</div>
+                </div>
+                <p>Conocimiento medio</p>
+            </ul>
+        </div> 
+        
+        <div>
+            <p>CSS</p>
+            <div class="barracss">
+                <div class="barracssprog">40%</div>
+            </div>
+            <p>Conocimiento medio</p>
+        </ul>
+    </div> 
+
+        <div>
+            <p>Java</p>
+            <div class="barrajava">
+                <div class="barrajavaprog">20%</div>
+            </div>
+            <p>Conocimiento bajo</p>
+        </ul>
+    </div> 
+
+        <div>
+            <p>Python</p>
+            <ul class="habPYTHONul">
+                <p>barra</p>
+                <p>Conocimiento medio</p>
+            </ul>
+        </div>    
+    </div>
+
+    <div>
+        <h2 class="Habtitulo">Habilidades</h2>
+    </div>
+        <div class="habilidadeslista">
+            <ul>
+                <li>Trabajo en equipo</li>
+                <li>Responsabilidad</li>
+                <li>Disciplina</li>
+                <li>Trato con personas</li>
+                <li>Resiliencia</li>
+                <!--En un principio también iba a poner Paciencia pero el no poder centrar "Disciplina" me saco de mi casillas-->
+            </ul>
+        </div>
+        <div>
+            <h2 class="Habtitulo">Habilidades aplicadas</h2>
+        </div>
+        <div class="Habilidadesinfo">
+            <p>Con trabajo en equipo quiero decir que no se me hace dicfil tratar con compañeros y en su mayoria me llevaria bien , en caso de que este no fuera el caso simpre somos 
+                compañero no amigos por lo cual no se me dificultaria seguir el trabajo aunque tuvisiemos diferecncias , soy una persona responsable sobretodo aplicado al trabajo en 
+                equipo ya que no quiero ser una carga para este ni para la empresa , también diria que soy una persona disciplinada si hay que hacer las cosas estas se hacen por mucho 
+                que no guste siempre ofreciendo la mejor calidad posible por ultimo soy una persona resiliente no flaqueo en momentos criticos y encuntro la forma de salir adelante.
+            </p>
+        </div>
+</div>
+
+<!--Contacto-->
+
+
+<div>
+    <div class="container">
+        <h1 class="h1contacto" id="contact">Contacto</h1>
+        <h2 class="h1contacto">¡Contrátame, me muero de hambre!</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nombre/Empresa:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico/Telefono Movil:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="responseMessage" class="response-message"></div>
+    </div>
+    <script src="script.js"></script>
+</div>
+<!--Pie de pagina-->
+
+<footer class="footer">
+    <p>© 2023-2024 Juan. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>     

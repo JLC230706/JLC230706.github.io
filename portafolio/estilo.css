@@ -1,0 +1,360 @@
+/*cookies*/
+
+
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#191c32;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.botonact {
+    background-color:#131c5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 180px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botonact:hover {
+    background-color: aqua
+}
+#botonacp:focus{
+    display: none;
+}
+.cookie-consent:focus{
+    display: none;
+}
+/*sobre mi*/
+
+/*general*/
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #191c32;
+    color:white
+}
+/*li navegación*/
+.entradas li{
+    list-style: none;
+}
+/*ul navegación*/
+.entradas {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.entradas a:hover{
+    color: aqua;
+}
+.entradas a{
+    color: white;
+    text-decoration: none;
+    justify-content: space-around;
+    
+}
+/*nombre*/
+.nombre span{
+    color: aqua;
+}
+.nombre {
+    margin-top: -7px;
+}
+
+/*barra navegación*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*inforrmación del sobre mi*/
+.info{
+    color: white;
+}
+/*contenido general del Sobre mi (título y texto) y la imagen*/
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+/*main pero solo imagen*/
+.main img{
+  width:350px;
+  border: 3px solid aqua;
+ height: 520px;
+}
+/*solo el titulo del sobre mi*/
+h1 {
+    font-size: 3em;
+    color: aqua;
+}
+/*bordes para el texto del sobre mi*/
+.sobremi{
+    border: 3px solid aqua;
+    border-radius: 10px;
+}
+/*insta*/
+.instagram{
+    width: 40px;
+
+}
+.instagram:hover{
+    content: url(imagenes/instanormal.PNG);
+    
+}
+
+/*galeria proyectos*/
+
+/*general*/
+.galeria{
+    background-color:white;
+    color: #191c32;  
+    display:flex; 
+    justify-content: space-around;
+}
+/*solo el título*/
+.h1galeria{
+    text-align: center;
+    color: #191c32;
+}
+/*la barra donde aparece el listado de proyectos*/
+.proyectos{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+/*decoración del enlace*/
+.proyectos a{
+    text-decoration: none;
+    color: #191c32;
+}
+
+/* Proyectos*/
+
+.infop1{
+    color: white;
+}
+
+.mainp1 {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.mainp1 img{
+    width:450px;
+    border:3px solid aqua;
+    height: 450px;
+}
+
+.h1p1 {
+    font-size: 3em;
+    color: aqua;
+    text-align: center;
+}
+.sobremip1{
+    border: 3px solid aqua;
+    border-radius: 10px;
+}
+
+/*habilidaes y conocimientos*/
+
+/*general*/
+.habycono{
+    background-color: #191c32;
+    margin-bottom: 50px;
+}
+/*titulo*/
+.hctitulo{
+    color: aqua;
+    text-align: center;
+    font-family:monospace;
+    margin-top: 100px;
+    
+}
+.hctitulo2{
+    color: aqua;
+    text-align: center;
+    font-family:monospace;
+    
+    
+}
+.Habtitulo{
+    color: aqua;
+    text-align: center;
+    font-family: monospace;
+}
+/* La parte general para que esten ordenados como deberian*/
+.conocimientos{
+    display: flex;
+    color: white;
+    font-family: serif;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+}
+
+/* barras de progreso*/
+/*html*/
+.habHTMLul{
+    margin-left: -40px;  
+}
+
+.barrahtml{
+    width: 100%; 
+    background-color: white; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    overflow: hidden; 
+}
+
+.barrahtmlprog{
+    width: 50%; 
+    background-color: aqua; 
+    height: 30px; 
+}
+
+/*css*/
+
+.barracss{
+    width: 100%; 
+    background-color: white; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    overflow: hidden; 
+}
+
+.barracssprog{
+    width: 40%; 
+    background-color: aqua; 
+    height: 30px; 
+}
+
+/*java*/
+
+.barrajava{
+    width: 100%; 
+    background-color: white; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    overflow: hidden; 
+}
+
+.barrajavaprog{
+    width: 20%; 
+    background-color: aqua; 
+    height: 30px; 
+}
+
+/*python no hay nada , si pongo el codigo de las barras el maquetado se destruye y si borro python el maquetado se destruye también*/
+
+/*habilidades*/
+.habilidadeslista{
+    color: white;
+}
+/* El estilo del apartado ul de la lista de habilidades*/
+.habilidadeslista ul{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top:40px;
+    text-align: center;
+    
+}
+/* Parte donde explico la aplicación de las habilidades*/
+.Habilidadesinfo{
+    color: white;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+/*Contacto*/
+/*caja donde estara el apartado de relleno*/
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+/*titulo*/
+.h1contacto {
+    text-align: center;
+    color: #191c32;
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:#191c32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+.response-message {
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+}
+
+/*pie de pagina*/
+.footer {
+    background-color:#191c32;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    color: white;
+}
